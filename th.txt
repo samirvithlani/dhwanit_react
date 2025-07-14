@@ -1,0 +1,21 @@
+2 type
+1)class based comp
+2) function based comp : 16.8 version 18,19
+function keyword arrow
+
+ <div style={{textAlign:"center"}}>
+        <h1>MAP DEMO</h1>
+        {
+            users.map((user)=>{
+                return <ul>
+                    <li>{user.name}</li>
+                </ul>
+            })
+        }
+    </div>
+
+virtual dom: original dom copy
+chnages --> vdom --> state variable
+
+hook:
+useState
