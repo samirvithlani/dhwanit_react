@@ -19,3 +19,12 @@ chnages --> vdom --> state variable
 
 hook:
 useState
+
+
+REACT JS SPA single page application
+
+npm i react-router-dom
+<BrowsrRouter> : routes enable... react app 
+<Routes>
+    <route>
+</>
