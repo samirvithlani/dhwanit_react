@@ -14,6 +14,8 @@ import { Shows } from "./components/Shows";
 import { Movies } from "./components/Movies";
 import { Navbar } from "./components/Navbar";
 import "./assets/css/style.css"
+import { PLayContent } from "./components/PLayContent";
+import { Error404 } from "./components/Error404";
 
 function App() {
   
@@ -21,9 +23,12 @@ function App() {
     <div className="root">
       <Navbar></Navbar>
       <Routes>
+        <Route path="/" element = {<Home></Home>}></Route>
         <Route path="/home" element = {<HomeComponent/>}></Route>
         <Route path="/shows" element = {<Shows/>}></Route>
         <Route path="/movies" element = {<Movies/>}></Route>
+        <Route path="/playcontent/:name" element = {<PLayContent/>}></Route>
+        <Route path="/*" element = {<Error404/>}></Route>
       </Routes>
     </div>
   );
