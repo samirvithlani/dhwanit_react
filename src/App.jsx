@@ -16,6 +16,7 @@ import { Navbar } from "./components/Navbar";
 import "./assets/css/style.css"
 import { PLayContent } from "./components/PLayContent";
 import { Error404 } from "./components/Error404";
+import { InputHandlingDemo1 } from "./components/InputHandlingDemo1";
 
 function App() {
   
@@ -28,6 +29,7 @@ function App() {
         <Route path="/shows" element = {<Shows/>}></Route>
         <Route path="/movies" element = {<Movies/>}></Route>
         <Route path="/playcontent/:name" element = {<PLayContent/>}></Route>
+        <Route path="/inputdemo1" element = {<InputHandlingDemo1/>}></Route>
         <Route path="/*" element = {<Error404/>}></Route>
       </Routes>
     </div>
