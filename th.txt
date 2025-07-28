@@ -28,3 +28,5 @@ npm i react-router-dom
 <Routes>
     <route>
 </>
+
+npm install react-hook-form
