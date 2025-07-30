@@ -30,3 +30,16 @@ npm i react-router-dom
 </>
 
 npm install react-hook-form
+{
+    required:{
+        value:true,
+        message:"name is required*"
+    }
+}
+
+{
+        required:{
+                value:true,
+                message:"age is required "
+            }
+}

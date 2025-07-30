@@ -18,6 +18,7 @@ import { PLayContent } from "./components/PLayContent";
 import { Error404 } from "./components/Error404";
 import { InputHandlingDemo1 } from "./components/InputHandlingDemo1";
 import { FormDemo1 } from "./components/forms/FormDemo1";
+import { FormDemo2 } from "./components/forms/FormDemo2";
 
 function App() {
   
@@ -32,6 +33,7 @@ function App() {
         <Route path="/playcontent/:name" element = {<PLayContent/>}></Route>
         <Route path="/inputdemo1" element = {<InputHandlingDemo1/>}></Route>
         <Route path="/formdemo1" element = {<FormDemo1/>}></Route>
+        <Route path="/formdemo2" element = {<FormDemo2/>}></Route>
         <Route path="/*" element = {<Error404/>}></Route>
       </Routes>
     </div>
