@@ -20,6 +20,7 @@ import { InputHandlingDemo1 } from "./components/InputHandlingDemo1";
 import { FormDemo1 } from "./components/forms/FormDemo1";
 import { FormDemo2 } from "./components/forms/FormDemo2";
 import { FormDemo3 } from "./components/forms/FormDemo3";
+import { FormDemo4 } from "./components/forms/FormDemo4";
 
 function App() {
   
@@ -36,6 +37,7 @@ function App() {
         <Route path="/formdemo1" element = {<FormDemo1/>}></Route>
         <Route path="/formdemo2" element = {<FormDemo2/>}></Route>
         <Route path="/formdemo3" element = {<FormDemo3/>}></Route>
+        <Route path="/formdemo4" element = {<FormDemo4/>}></Route>
         <Route path="/*" element = {<Error404/>}></Route>
       </Routes>
     </div>
