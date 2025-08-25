@@ -49,3 +49,6 @@ formDemo3-->2 validation minLength..,max,validate,cbox radio
 
 formDemo4 -->name,hobbies,
 validation -- 5 hobbies -- 3 hobbies [hint :validate]
+
+
+to handle side effects in react js we can use useEffect hook:

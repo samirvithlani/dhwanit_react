@@ -1,9 +1,15 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 export const ApiDemo1 = () => {
     const [message, setmessage] = useState("")
     const [users, setusers] = useState([])
+
+    useEffect(()=>{
+
+        getApiCall()
+    },[])
+
     const getApiCall = async()=>{
         const res = await axios.get("https://node5.onrender.com/user/user")
         //res -- axios object..
@@ -17,7 +23,7 @@ export const ApiDemo1 = () => {
   return (
     <div>
         <h1>API DEMO 1</h1>
-        <button onClick={()=>{getApiCall()}}>GET</button>
+        {/* <button onClick={()=>{getApiCall()}}>GET</button> */}
         <h1>{message}</h1>
         <table className='table table-dark'>
             <thead>

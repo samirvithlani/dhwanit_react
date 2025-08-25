@@ -26,6 +26,7 @@ import { ApiDemo2 } from "./components/api/ApiDemo2";
 import { ApiDemo3 } from "./components/api/ApiDemo3";
 import { ApiDemo4 } from "./components/api/ApiDemo4";
 import { ToastContainer, Zoom } from "react-toastify";
+import { UseEffectDemo } from "./components/UseEffectDemo";
 
 function App() {
   return (
@@ -58,6 +59,7 @@ function App() {
         <Route path="/apidemo1" element={<ApiDemo1 />}></Route>
         <Route path="/apidemo2" element={<ApiDemo2 />}></Route>
         <Route path="/apidemo3" element={<ApiDemo4 />}></Route>
+        <Route path="/useEffectdemo" element = {<UseEffectDemo/>}></Route>
         <Route path="/*" element={<Error404 />}></Route>
       </Routes>
     </div>
