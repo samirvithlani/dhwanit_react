@@ -22,6 +22,9 @@ import { FormDemo2 } from "./components/forms/FormDemo2";
 import { FormDemo3 } from "./components/forms/FormDemo3";
 import { FormDemo4 } from "./components/forms/FormDemo4";
 import { ApiDemo1 } from "./components/api/ApiDemo1";
+import { ApiDemo2 } from "./components/api/ApiDemo2";
+import { ApiDemo3 } from "./components/api/ApiDemo3";
+import { ApiDemo4 } from "./components/api/ApiDemo4";
 
 function App() {
   
@@ -40,7 +43,11 @@ function App() {
         <Route path="/formdemo3" element = {<FormDemo3/>}></Route>
         <Route path="/formdemo4" element = {<FormDemo4/>}></Route>
         <Route path="/apidemo1" element = {<ApiDemo1/>}></Route>
+        <Route path="/apidemo2" element = {<ApiDemo2/>}></Route>
+        <Route path="/apidemo3" element = {<ApiDemo4/>}></Route>
         <Route path="/*" element = {<Error404/>}></Route>
+        
+        
       </Routes>
     </div>
   );
