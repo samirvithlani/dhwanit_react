@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Loader } from '../../Loader'
 import { toast } from 'react-toastify'
+import { Link } from 'react-router-dom'
 
 export const ApiDemo1 = () => {
     const [message, setmessage] = useState("")
@@ -66,6 +67,8 @@ export const ApiDemo1 = () => {
                             <td>{user.isActive == true?"Active":"NOt Active"}</td>
                             <td>
                                 <button onClick={()=>{deleteUser(user._id)}} className='btn btn-danger'>DELETE</button>
+                                <Link to={`/updateuser/${user._id}`} style={{margin:2}} className='btn btn-warning'>UDPATE</Link>
+                        
                             </td>
                         </tr>
                     })
