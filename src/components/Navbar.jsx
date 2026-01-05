@@ -24,7 +24,7 @@ export const Navbar = () => {
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <Link class="nav-link" to="/home">
-                Home 
+                Home
               </Link>
             </li>
             <li class="nav-item">
@@ -37,7 +37,7 @@ export const Navbar = () => {
                 movies
               </Link>
             </li>
-            
+
             <li class="nav-item">
               <Link class="nav-link" to="/inputdemo1">
                 inputdemo1
@@ -65,7 +65,7 @@ export const Navbar = () => {
             </li>
             <li class="nav-item">
               <Link class="nav-link" to="/apidemo1">
-                API DEMO 1  
+                API DEMO 1
               </Link>
             </li>
             <li class="nav-item">
@@ -78,13 +78,17 @@ export const Navbar = () => {
                 API DEMO 3
               </Link>
             </li>
-            
+
             <li class="nav-item">
               <Link class="nav-link" to="/useEffectdemo">
                 useEffectdemo
               </Link>
             </li>
-            
+            <li class="nav-item">
+              <Link class="nav-link" to="/products">
+                products
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
