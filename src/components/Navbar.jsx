@@ -1,10 +1,18 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
+  //to get redux state we will use useSelector hook
+
+  const state = useSelector((state) => state);
+  console.log("state", state);
+
+  //const state = useSelector((state)=>{return state})
+
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
           Navbar
         </a>
@@ -88,6 +96,9 @@ export const Navbar = () => {
               <Link class="nav-link" to="/products">
                 products
               </Link>
+            </li>
+            <li class="nav-item">
+              <h4 style={{color:"red"}}>{state.cart.cart?.length}</h4>
             </li>
           </ul>
         </div>
