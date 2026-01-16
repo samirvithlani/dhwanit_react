@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 // import "./App.css";
@@ -29,8 +29,16 @@ import { ToastContainer, Zoom } from "react-toastify";
 import { UseEffectDemo } from "./components/UseEffectDemo";
 import { UpdateUser } from "./components/api/UpdateUser";
 import { ProductComponent } from "./components/ProductComponent";
+import { useDispatch } from "react-redux";
+import { fetchUser } from "./redux/ContentSlice";
 
 function App() {
+  
+  const dispatch = useDispatch()
+  useEffect(()=>{
+    dispatch(fetchUser())
+  },[])
+
   return (
     <div className="root">
       <ToastContainer
